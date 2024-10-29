@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    
+<body>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden; /* Evita el scroll */
+            position: relative;
+            height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+        }
+
+        /* Estilo para el fondo animado */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://example.com/your-image.jpg'); /* Cambia por tu URL de imagen */
+            background-size: cover;
+            background-position: center;
+            animation: backgroundAnimation 10s infinite alternate; /* Animación del fondo */
+            z-index: -1; /* Coloca el fondo detrás del contenido */
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-image: url('https://example.com/your-image.jpg'); /* Primera imagen */
+            }
+            50% {
+                background-image: url('https://example.com/another-image.jpg'); /* Segunda imagen */
+            }
+            100% {
+                background-image: url('https://example.com/yet-another-image.jpg'); /* Tercera imagen */
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+            position: relative; /* Asegura que el contenedor esté por encima del fondo */
+            z-index: 1; /* Coloca el contenedor sobre el fondo */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideIn 0.5s ease-in-out; /* Animación de entrada para el perfil */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .profile img {
+            width: 180px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #2b4668;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #0072ff;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            color: #444;
+            border-bottom: 2px solid #0072ff;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h3 {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f0f8ff;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #0072ff;
+            border-radius: 5px;
+            transition: background 0.3s;
+            animation: fadeIn 0.5s ease-in-out; /* Animación para cada elemento de la lista */
+        }
+
+        ul li:hover {
+            background: #e6f7ff;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+<div class="container">
+    <div class="profile">
+        <img src="IMAGEN/PERFIL.jpg" alt="Foto de Carlos David Correa Quintero">
+        <h1>Carlos David Correa Quintero</h1>
+        <p>[Tecnólogo en programación de sofware]</p>
+    </div>
+
+    <div class="section">
+        <h2>Contactame</h2>
+        <ul>
+            <li>Email: [quinterodavid104@gmail.com]</li>
+            <li>Teléfono: [3238296250]</li>
+           <li>Instagram: [speedmaxcongomitastrululu]</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Experiencia Laboral</h2>
+        <ul>
+            <li>[Actualmente estoy estudiando programacion de software con el sena , estoy formandome para ser tecnologo y despues especializarme en la carrera de ingenieria de sofware]</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Educación</h2>
+        <ul>
+            <li>[11] en [Icolven] (1/12/2024)</li>
+            <li>[media tecnica en programacion de sofware]</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>[trabajo en equipo ]</li>
+            <li>[liderazgo]</li>
+            <li>[proactivo]</li>
+            <li>[adaptable]</li>
+            <li>[reciliente]</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Referencias</h2>
+        <li>Jhon Fredy Pico</li>
+        <li>ingeniero de sofware</li>
+        <li>3246433777</li>
+        <li>jhonfredypico@gmail.edu.co</li>
+
+    </div>
+
+    
+</div>
+
+</body>
+</html>
